@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Diri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Profil Pribadi</h1>
+    </header>
+
+    <nav>
+        <div class="logo">MyBrand</div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li><a href="biodata.html">Data Diri</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <article>
+            <h2>Informasi Data Diri</h2>
+            <table border="1" cellpadding="10" cellspacing="0" style="width:100%; margin-top:10px;">
+                <tr>
+                    <th>Nama Lengkap</th>
+                    <td>Muhammad Emir Ibrahim</td>
+                </tr>
+                <tr>
+                    <th>Program Studi</th>
+                    <td>Teknik Informatika</td>
+                </tr>
+                <tr>
+                    <th>Institusi</th>
+                    <td>Universitas Suryakancana</td>
+                </tr>
+            </table>
+        </article>
+        
+        <aside>
+            <h3>Menu Cepat</h3>
+            <p>Silakan navigasikan halaman melalui menu di atas.</p>
+        </aside>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Data Diri Mahasiswa</p>
+    </footer>
+
+</body>
+</html>
