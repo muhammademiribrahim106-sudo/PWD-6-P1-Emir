@@ -1,0 +1,49 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama - Website Latihan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Selamat Datang di Website Saya</h1>
+    </header>
+
+    <nav>
+        <div class="logo">MyBrand</div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li><a href="biodata.html">Data Diri</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <article>
+            <h2>Judul Artikel Utama</h2>
+            <p>Ini adalah bagian konten utama (article) dari halaman web. Anda dapat mengisi bagian ini dengan paragraf penjelasan, gambar, atau tabel sesuai dengan kreativitas Anda.</p>
+            <img src="https://via.placeholder.com/600x250" alt="Contoh Gambar" style="width:100%; margin-top:10px; border-radius:5px;">
+        </article>
+        
+        <aside>
+            <h3>Sidebar / Aside</h3>
+            <p>Informasi tambahan atau widget terkait dapat ditaruh di bagian aside ini.</p>
+            <ul>
+                <li><a href="#">Link Terkait 1</a></li>
+                <li><a href="#">Link Terkait 2</a></li>
+            </ul>
+        </aside>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Dibuat dengan HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
