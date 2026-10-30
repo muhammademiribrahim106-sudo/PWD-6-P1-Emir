@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entitas Gamer Store (EGS) - Top Up Game Murah & Cepat</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.8; /* Memperbesar jarak antar baris teks agar lebih longgar */
+            padding: 40px 20px; /* Menambah jarak pinggir halaman */
+        }
+
+        /* Header Halaman dengan Nuansa Gaming EGS */
+        header#top-header {
+            text-align: center;
+            padding: 50px 30px; /* Memperluas area padding header */
+            background: linear-gradient(135deg, #1e293b 0%, #0284c7 100%);
+            color: white;
+            border-radius: 16px;
+            margin-bottom: 40px; /* Menambah jarak ke bawah */
+            box-shadow: 0 6px 25px rgba(2, 132, 199, 0.3);
+            border: 1px solid #38bdf8;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #38bdf8;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            color: #cbd5e1;
+            font-size: 1.1rem;
+        }
+
+        /* Section Konten Promosi */
+        .content-section {
+            max-width: 850px;
+            margin: 0 auto 40px auto; /* Menambah jarak antar kotak section */
+            background: #1e293b;
+            padding: 40px; /* Memperluas jarak di dalam kotak */
+            border-radius: 16px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            border: 1px solid #334155;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 20px; /* Menambah jarak bawah judul */
+            border-bottom: 2px solid #0284c7;
+            padding-bottom: 12px;
+            font-size: 1.5rem;
+        }
+
+        /* Grid Layanan Top Up */
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px; /* Memperlebar jarak antar kartu game */
+            margin-top: 25px;
+        }
+
+        .game-card {
+            background: #0f172a;
+            padding: 20px; /* Memperluas isi dalam kartu */
+            border-radius: 12px;
+            border: 1px solid #334155;
+            text-align: center;
+        }
+
+        .game-card h3 {
+            color: #f8fafc;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .game-card .badge {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            font-size: 0.85rem;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .game-card p {
+            margin-bottom: 8px;
+        }
+
+        /* Spacer untuk Memenuhi Ketentuan Scroll > 2000px */
+        .spacer {
+            height: 1800px;
+            background: linear-gradient(to bottom, #0f172a, #1e293b);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            color: #94a3b8;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Styling Tombol Scroll to Top (Sesuai Ketentuan 2 & 3) */
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            border: 2px solid #38bdf8;
+            outline: none;
+            background-color: #0284c7;
+            color: white;
+            cursor: pointer;
+            padding: 15px 18px;
+            border-radius: 50%;
+            font-size: 18px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            
+            /* Ketentuan 3: Opacity awal dan transisi */
+            opacity: 0.6;
+            transition: opacity 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+
+            display: none; 
+        }
+
+        /* Hover Effect: Opacity 100% */
+        #scrollTopBtn:hover {
+            opacity: 1;
+            background-color: #38bdf8;
+            color: #0f172a;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Page Header / Banner EGS -->
+    <header id="top-header">
+        <h1>ENTITAS GAMER STORE (EGS)</h1>
+        <p>Layanan Top Up Game Terpercaya, Murah, Cepat & Legal 24/7</p>
+    </header>
+
+    <!-- Konten Promosi 1: Promo Spesial Launching / Grand Opening -->
+    <div class="content-section">
+        <h2>🔥 PROMO LAUNCHING EGS STORE</h2>
+        <p>Selamat datang di official portal <strong>Entitas Gamer Store (EGS)</strong>! Dapatkan promo potongan harga spesial up to 20% untuk transaksi pertama kamu. Proses kilat dalam hitungan detik langsung masuk ke akun game kamu!</p>
+        
+        <div class="game-grid">
+            <div class="game-card">
+                <h3>Free Fire</h3>
+                <span class="badge">PROMO KILAT</span>
+                <p>140 Diamonds: <strong>Rp 19.000</strong></p>
+                <p>720 Diamonds: <strong>Rp 95.000</strong></p>
+            </div>
+            <div class="game-card">
+                <h3>Mobile Legends</h3>
+                <span class="badge">BEST SELLER</span>
+                <p>86 Diamonds: <strong>Rp 20.000</strong></p>
+                <p>172 Diamonds: <strong>Rp 40.000</strong></p>
+            </div>
+            <div class="game-card">
+                <h3>Clash of Clans</h3>
+                <span class="badge">EVENT STOK</span>
+                <p>Gold Pass: <strong>Rp 79.000</strong></p>
+                <p>Gems Pack: <strong>Harga Hemat</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konten Promosi 2: Alasan Memilih EGS -->
+    <div class="content-section">
+        <h2>⚡ KENAPA HARUS TOP UP DI EGS?</h2>
+        <ul style="margin-left: 25px; line-height: 2;">
+            <li><strong>Proses Otomatis:</strong> Transaksi diproses 24/7 secara sistem tanpa perlu menunggu lama.</li>
+            <li><strong>100% Legal & Aman:</strong> Seluruh produk diambil langsung dari distributor resmi.</li>
+            <li><strong>Metode Pembayaran Lengkap:</strong> Mendukung QRIS, e-Wallet (DANA, OVO, ShopeePay, GoPay), serta Transfer Bank.</li>
+            <li><strong>Layanan Customer Service:</strong> Siap membantu jika terjadi kendala pada transaksi Anda.</li>
+        </ul>
+    </div>
+
+    <!-- Konten Panjang untuk Memenuhi Ketentuan Scroll > 2000px -->
+    <div class="content-section">
+        <h2>Area Konten Panjang (> 2000px)</h2>
+        <div class="spacer">
+            <p style="padding-top: 50px;">↓ Gulir ke bawah untuk melihat promo event & catalog game lengkap EGS ↓</p>
+            <p>Sistem EGS siap melayani kebutuhan top up harian para gamers seluruh Indonesia.</p>
+            <p style="padding-bottom: 50px;">Posisi akhir konten halaman (> 2000px).</p>
+        </div>
+    </div>
+
+    <!-- Tombol Kembali ke Atas (Ketentuan 2 & 3) -->
+    <button id="scrollTopBtn" onclick="scrollToTop()" title="Kembali ke atas">⬆</button>
+
+    <script>
+        let calcScrollValue = () => {
+            let scrollBtn = document.getElementById("scrollTopBtn");
+            let pos = document.documentElement.scrollTop || document.body.scrollTop;
+            
+            if (pos > 500) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        window.onscroll = calcScrollValue;
+    </script>
+</body>
+</html>

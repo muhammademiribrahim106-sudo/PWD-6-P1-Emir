@@ -1,0 +1,23 @@
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+const calcScrollValue = () => {
+    let pos = document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (pos > 500) {
+        scrollBtn.style.display = "block";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+};
+
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+
+// Event Listeners
+scrollBtn.addEventListener("click", scrollToTop);
+window.addEventListener("scroll", calcScrollValue);
+window.addEventListener("load", calcScrollValue);
